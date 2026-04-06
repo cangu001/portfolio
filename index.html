@@ -1218,7 +1218,7 @@ footer {
 }
 
 .reveal {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(24px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
@@ -1837,5 +1837,8 @@ form.addEventListener('submit', async (e) => {
     form.style.display = 'none';
     successMsg.style.display = 'block';
   } catch (err) {
-    // Fallback: show success anyway for demo
-    form.style.
+  // Fallback: show success anyway for demo
+  form.style.display = 'none';
+  successMsg.style.display = 'block';
+}
+});
